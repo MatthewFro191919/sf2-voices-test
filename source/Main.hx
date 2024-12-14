@@ -1,5 +1,14 @@
 package;
 
+import config.Config;
+import openfl.system.System;
+import flixel.FlxG;
+import flixel.util.FlxColor;
+import sys.FileSystem;
+import openfl.display3D.Context3DTextureFormat;
+import openfl.display.FPS;
+import openfl.display.Sprite;
+
 #if android
 import android.content.Context;
 #end
@@ -41,15 +50,6 @@ import backend.Highscore;
 	#define GAMEMODE_AUTO
 ')
 #end
-
-import config.Config;
-import openfl.system.System;
-import flixel.FlxG;
-import flixel.util.FlxColor;
-import sys.FileSystem;
-import openfl.display3D.Context3DTextureFormat;
-import openfl.display.FPS;
-import openfl.display.Sprite;
 
 class Main extends Sprite
 {	
