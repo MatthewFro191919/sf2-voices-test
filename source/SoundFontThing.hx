@@ -3,7 +3,7 @@ import cpp.Native;
 import haxe.Json;
 import sys.FileSystem;
 import cpp.NativeArray;
-import backend.Song.SwagSong;
+import Song.SwagSong;
 import cpp.Star;
 import cpp.Pointer;
 import sys.io.File;
@@ -17,7 +17,6 @@ import flixel.system.FlxSound;
 import haxe.io.Bytes;
 import openfl.media.Sound;
 import openfl.utils.ByteArray;
-import objects.Note;
 
 using StringTools;
 
