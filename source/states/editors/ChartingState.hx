@@ -184,6 +184,11 @@ class ChartingState extends MusicBeatState implements PsychUIEventHandler.PsychU
 	var vocals:FlxSound = new FlxSound();
 	var opponentVocals:FlxSound = new FlxSound();
 
+	var pluck:SoundFontThing = new SoundFontThing("assets/soundfonts/test.sf2");
+	var dadSound:SoundFontThing;
+	var bfSound:SoundFontThing;
+
+	
 	var timeLine:FlxSprite;
 	var infoText:FlxText;
 
@@ -584,7 +589,7 @@ class ChartingState extends MusicBeatState implements PsychUIEventHandler.PsychU
 			notes: [],
 			events: [],
 			bpm: 150,
-			needsVoices: true,
+			Voices: true,
 			speed: 1,
 			offset: 0,
 
@@ -1821,7 +1826,19 @@ class ChartingState extends MusicBeatState implements PsychUIEventHandler.PsychU
 			}
 			catch (e:Dynamic) {}
 		}
+		else if (PlayState.SONG.needsVoices && PlayState.SONG == 'fresnel' && PlayState.SONG == 'sio2' && PlayState.SONG == 'demoniac' && PlayState.SONG == 'kickin' && PlayState.SONG == 'playtime' && PlayState.SONG == 'revenant' && PlayState.SONG == 'trigger-happy' && PlayState.SONG == 'zombie-flower')	
+		{
+			try
+			{
+				dadSound = new SoundFontThing("assets/soundfonts/" + _song.player2 + ".sf2");
+				bfSound = new SoundFontThing("assets/soundfonts/" + _song.player1 + ".sf2");
 
+				add(dadSound.sounds);
+				add(bfSound.sounds);
+				add(pluck.sounds);
+			}
+			catch (e:Dynamic) {}
+		}
 		#if DISCORD_ALLOWED
 		DiscordClient.changePresence('Chart Editor', 'Song: ' + PlayState.SONG.song);
 		#end
