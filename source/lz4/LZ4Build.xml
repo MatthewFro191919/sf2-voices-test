@@ -3,6 +3,7 @@
 	
 	<files id='haxe'>
 		<compilervalue name="-I" value="${PROJECT_DIR}/" />
+		<file name="${PROJECT_DIR}/lz4.c" />
 	</files>
-	
+
 </xml>
