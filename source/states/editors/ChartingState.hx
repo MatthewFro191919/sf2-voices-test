@@ -1826,19 +1826,6 @@ class ChartingState extends MusicBeatState implements PsychUIEventHandler.PsychU
 			}
 			catch (e:Dynamic) {}
 		}
-		else if (PlayState.SONG == 'fresnel' && PlayState.SONG == 'sio2' && PlayState.SONG == 'demoniac' && PlayState.SONG == 'kickin' && PlayState.SONG == 'playtime' && PlayState.SONG == 'revenant' && PlayState.SONG == 'trigger-happy' && PlayState.SONG == 'zombie-flower')	
-		{
-			try
-			{
-				dadSound = new SoundFontThing("assets/soundfonts/" + _song.player2 + ".sf2");
-				bfSound = new SoundFontThing("assets/soundfonts/" + _song.player1 + ".sf2");
-
-				add(dadSound.sounds);
-				add(bfSound.sounds);
-				add(pluck.sounds);
-			}
-			catch (e:Dynamic) {}
-		}
 		#if DISCORD_ALLOWED
 		DiscordClient.changePresence('Chart Editor', 'Song: ' + PlayState.SONG.song);
 		#end
