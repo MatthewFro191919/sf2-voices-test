@@ -1826,7 +1826,7 @@ class ChartingState extends MusicBeatState implements PsychUIEventHandler.PsychU
 			}
 			catch (e:Dynamic) {}
 		}
-		else if (PlayState.SONG.needsVoices && PlayState.SONG == 'fresnel' && PlayState.SONG == 'sio2' && PlayState.SONG == 'demoniac' && PlayState.SONG == 'kickin' && PlayState.SONG == 'playtime' && PlayState.SONG == 'revenant' && PlayState.SONG == 'trigger-happy' && PlayState.SONG == 'zombie-flower')	
+		else if (PlayState.SONG == 'fresnel' && PlayState.SONG == 'sio2' && PlayState.SONG == 'demoniac' && PlayState.SONG == 'kickin' && PlayState.SONG == 'playtime' && PlayState.SONG == 'revenant' && PlayState.SONG == 'trigger-happy' && PlayState.SONG == 'zombie-flower')	
 		{
 			try
 			{
