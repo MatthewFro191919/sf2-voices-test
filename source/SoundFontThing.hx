@@ -17,6 +17,7 @@ import flixel.system.FlxSound;
 import haxe.io.Bytes;
 import openfl.media.Sound;
 import openfl.utils.ByteArray;
+import objects.Note;
 
 using StringTools;
 
